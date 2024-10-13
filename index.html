@@ -19,8 +19,8 @@
                 <div class="camera"></div>
                 <div class="display">
                 <div class="artboard artboard-demo phone-2">
-                    <!-- Login Section   -->
                     
+                    <!-- Login Section   -->
                     <div class="hero bg-base-200 min-h-screen">
                         <div class="hero-content flex-col lg:flex-row-reverse">
                         <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -29,19 +29,19 @@
                                 <label class="label">
                                 <span class="label-text">Account Number</span>
                                 </label>
-                                <input type="text" placeholder="Account Number" class="input input-bordered" required />
+                                <input id="phone-number" type="text" placeholder="Account Number" class="input input-bordered" required />
                             </div>
                             <div class="form-control">
                                 <label class="label">
                                 <span class="label-text">PIN</span>
                                 </label>
-                                <input type="text" placeholder="Enter Payoo PIN" class="input input-bordered" required />
+                                <input type="text" placeholder="Enter Payoo PIN" class="input input-bordered" autocomplete="off" required />
                                 <label class="label">
                                 <a href="#" class="label-text-alt link link-hover">Forgot PIN?</a>
                                 </label>
                             </div>
                             <div class="form-control mt-6">
-                                <button class="btn btn-primary">Login</button>
+                                <button id="btn-login" class="btn btn-primary">Login</button>
                             </div>
                             </form>
                         </div>
@@ -52,4 +52,5 @@
             </div>
         </main>
 </body>
+<script src="js/payoo.js"></script>
 </html>
