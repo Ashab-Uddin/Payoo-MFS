@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Css -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Payoo home Page</title>
 </head>
 <body>
-    <h1>Welcome to Home Page</h1>
+    <main class="flex items-center justify-center h-screen">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+            <div class="artboard artboard-demo phone-2">
+                <div class="flex items-center justify-between gap-6">
+                    <div class="stats shadow">
+                        <div class="stat">
+                        <div class="stat-value">9,400</div>
+                        <div class="stat-desc">Available Balance</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline btn-error">Log Out</button>
+                </div>
+                <div class="divider divider-start"></div>
+                <div class="flex gap-8">
+                    <button id="add-money" class="btn btn-success">Add Money</button>
+                <button id="cash-out" class="btn btn-error">Cash Out</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </main>
 </body>
+<script>
+    document.getElementById('add-money').addEventListener('click',function(){
+    console.log("clickeed");
+    window.location.href ='/addMoney.html';
+})
+</script>
+
 </html>

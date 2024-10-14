@@ -21,3 +21,5 @@ document.getElementById('btn-login').addEventListener('click',function(event){
 
 
 })
+
+//step-1: set event haldler
