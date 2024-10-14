@@ -20,11 +20,11 @@
                 <div class="flex items-center justify-between gap-6">
                     <div class="stats shadow">
                         <div class="stat">
-                        <div class="stat-value">9,400</div>
+                        <div id="account-balance" class="stat-value">9400</div>
                         <div class="stat-desc">Available Balance</div>
                         </div>
                     </div>
-                    <button class="btn btn-outline btn-error">Log Out</button>
+                    <button id="log-out" class="btn btn-outline btn-error">Log Out</button>
                 </div>
                 <div class="divider divider-start"></div>
                 <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -33,19 +33,19 @@
                         <label class="label">
                         <span class="label-text text-xl font-bold">Amount</span>
                         </label>
-                        <input type="text" placeholder="Enter amount to withdraw" class="input input-bordered" required />
+                        <input  id="withdraw-amount" type="text" placeholder="Enter amount to withdraw" class="input input-bordered" required />
                     </div>
                     <div class="form-control">
                         <label class="label">
                         <span class="label-text text-xl font-bold">PIN Number</span>
                         </label>
-                        <input type="text" placeholder="Enter 4 digit pin number" class="input input-bordered" required />
+                        <input id="pin-number" type="text" placeholder="Enter 4 digit pin number" class="input input-bordered" required />
                         <label class="label">
                         <a href="#" class="label-text-alt link link-hover">Forgot PIN?</a>
                         </label>
                     </div>
                     <div class="form-control mt-6">
-                        <button class="btn btn-primary">Add Money</button>
+                        <button id="cash-out" class="btn btn-primary">Cash Out</button>
                     </div>
                     </form>
                 </div>
@@ -53,6 +53,6 @@
             </div>
         </div>
     </main>
-    
 </body>
+<script src="js/cashOut.js"></script>
 </html>

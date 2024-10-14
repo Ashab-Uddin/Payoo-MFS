@@ -6,7 +6,7 @@ document.getElementById('add-money').addEventListener('click',function(){
 //Cash Out
     document.getElementById('cash-out').addEventListener('click',function(){
     
-    window.location.href ='/addMoney.html';
+    window.location.href ='/cashOut.html';
 })
 
 //Log Out
